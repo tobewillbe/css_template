@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* reset */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* common style */
+body {
+    font-size: 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.hide {
+    display: none !important;
+}
+
+
+/* header style */
+header {
+    /*background: #000000;*/
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: space-evenly;
+
+    color : #ffffff;
+    font-weight: 700;
+
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+header .logo{
+    /*background: tomato;*/
+    flex:1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+header .logo img{
+    height: 60px;
+}
+
+header .intro-text{
+    /*background: greenyellow;*/
+    flex:4;
+    margin-left: 100px;
+}
+
+header .menu-open{
+    /*background: skyblue;*/
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .menu-open .lnr-menu {
+    font-size: 33px;
+    margin-left: 15px;
+}
+
+/* menu nav style*/
+.gnb {
+    background: #000;
+    color: #888;
+    font-size: 40px;
+    height: 100vh;
+
+    /*절대값으로 위치조정*/
+    position: fixed;
+    right: -100%;
+    top: 0;
+    z-index: 2000;
+
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 70px 100px;
+    box-sizing: border-box;
+    align-content: space-evenly;
+    transition: 0.3s;
+}
+.gnb .close{
+    color: #fff;
+}
+
+.gnb ul{
+    margin-right: 200px;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+.gnb ul li:hover {
+    color: #fff;
+}
+
+.main-screen{
+    background: url('../img/visual1.jpg') no-repeat center/cover ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main-screen .main-text-box{
+    width: fit-content;
+    font-size: 18px;
+    color: #ffffff;
+
+    margin-left: 150px;
+}
+
+.main-screen .main-text-box h3{
+    margin: 30px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.3;
+}
